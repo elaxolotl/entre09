@@ -21,10 +21,14 @@ nav{
     align-items: center;
 }
 
-.scrolled{
+.navbar{
     position: sticky;
     top: 0;
-    box-shadow: 0px 0px 40px black;
+    transition: 0.3s;
+}
+
+.scrolled{
+    box-shadow: 0px 0px 35px rgb(174, 174, 174);
 }
 
 .nav-logo{
