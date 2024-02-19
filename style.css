@@ -6,7 +6,7 @@
     --dark-green--: #095256;
     --teal--: #087F8C;
     --light-yellow--: #EEE4E1;
-    --light-blue--: #EEE4E1;
+    --light-blue--: #ECF8F8;
 }
 
 *{
@@ -16,7 +16,7 @@
 
 body{
     font-family: "Nunito Sans", sans-serif;
-    background-color: #EEE4E1;
+    background-color: var(--light-yellow--);
     margin-bottom: 100vh;
 }
 
@@ -63,7 +63,8 @@ ul li ul.drop-down li{
 }
 
 ul li ul.drop-down li:hover{
-    background-color: #EEE4E1;
+    background-color: var(--light-yellow--);
+    border-radius: 10px;
 }
 
 ul li ul.drop-down{
@@ -87,12 +88,12 @@ li.nav-hover:hover ul.drop-down{
 
 .first-section h1{
     font-size: 70px;
-    color: #b3971a;
+    color: var(--gold--);
 }
 
 .first-section h2{
     margin-top: 2vh;
     font-size: 20px;
-    color: #095256;
+    color: var(--dark-green--);
 }
 
