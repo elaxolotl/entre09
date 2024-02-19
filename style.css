@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+/*colors*/
+:root{
+    --gold--: #B3971A;
+    --dark-green--: #095256;
+    --teal--: #087F8C;
+    --light-yellow--: #EEE4E1;
+    --light-blue--: #EEE4E1;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -16,8 +25,7 @@ body{
 nav{
     background-color: white;
     display: flex;
-    justify-content: center;
-    gap: 70vh;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -41,11 +49,34 @@ nav li{
     margin-left: 100px;
     cursor: pointer;
     transition: 0.3s;
+    position: relative;
 }
 
 nav li:hover{
     font-weight: 600;
 }
+
+ul li ul.drop-down li{
+    display: block;
+    margin-left: 0;
+    padding: 20px;
+}
+
+ul li ul.drop-down li:hover{
+    background-color: #EEE4E1;
+}
+
+ul li ul.drop-down{
+    position: absolute;
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+li.nav-hover:hover ul.drop-down{
+    display:block;
+}
+
 
 /*first section*/
 
