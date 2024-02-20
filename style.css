@@ -14,9 +14,11 @@
 hr{
     margin-top: 15vh;
 }
+
 a{
     text-decoration: none;
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -39,6 +41,10 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+a{
+    color: black;
 }
 
 .navbar{
