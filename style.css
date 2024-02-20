@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 /*colors*/
-:root{
+:root {
     --gold--: #B3971A;
     --dark-green--: #095256;
     --teal--: #5a7677;
@@ -11,59 +11,59 @@
 
 /*general*/
 
-hr{
+hr {
     margin-top: 15vh;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "Nunito Sans", sans-serif;
     background-color: var(--light-yellow--);
 }
 
 /*navbar styling*/
 
-nav{
+nav {
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-a{
+a {
     color: black;
 }
 
-.navbar{
+.navbar {
     position: sticky;
     top: 0;
     transition: 0.3s;
     z-index: 999;
 }
 
-.scrolled{
+.scrolled {
     box-shadow: 0px 0px 35px rgb(174, 174, 174);
 }
 
-.nav-logo{
+.nav-logo {
     height: auto;
     width: 50px;
 }
 
-nav li{
+nav li {
     display: inline-block;
     margin-left: 100px;
     cursor: pointer;
@@ -71,132 +71,167 @@ nav li{
     position: relative;
 }
 
-nav li:hover{
+nav li:hover {
     font-weight: 600;
 }
 
-ul li ul.drop-down li{
+ul li ul.drop-down li {
     display: block;
     margin-left: 0;
     padding: 20px;
 }
 
-ul li ul.drop-down li:hover{
+ul li ul.drop-down li:hover {
     background-color: var(--light-yellow--);
 }
 
-ul li ul.drop-down{
+ul li ul.drop-down {
     position: absolute;
     display: none;
     background-color: white;
     border-radius: 10px;
 }
 
-li.nav-hover:hover ul.drop-down{
-    display:block;
+li.nav-hover:hover ul.drop-down {
+    display: block;
+}
+
+ul li ul.drop-down-second li {
+    display: block;
+    margin-left: 0;
+    padding: 20px;
+}
+
+ul li ul.drop-down-second li:hover {
+    background-color: var(--light-yellow--);
+}
+
+ul li ul.drop-down-second {
+    position: absolute;
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+li.nav-hover-second:hover ul.drop-down-second {
+    display: block;
 }
 
 
 /*hero section*/
 
-.hero{
+.hero {
     margin: 10vh 40vh 0vh 40vh;
     text-align: center;
 }
 
-.hero h1{
+.hero h1 {
     font-size: 60px;
     color: var(--gold--);
     line-height: 100%;
 }
 
-.hero h2{
+.hero h2 {
     margin-top: 5vh;
     font-size: 20px;
     color: var(--dark-green--);
 }
 
-.hero button{
+.hero button {
     font-family: inherit;
     margin-top: 5vh;
     font-size: 20px;
     padding: 10px 20px;
     cursor: pointer;
     color: white;
-    background-color:var(--gold--) ;
+    background-color: var(--gold--);
     border: none;
     border-radius: 10px;
     transition: 0.3s;
     box-shadow: 0px 10px 20px rgb(167, 167, 167);
 }
 
-.hero button i{
+.hero button i {
     font-size: 15px;
 }
 
-.hero button:hover{
+.hero button:hover {
     background-color: #dfc13b;
 }
 
 /*about us section*/
 
-.about-us{
+.about-us {
     margin: 15vh 40vh 0vh 40vh;
     text-align: center;
 }
 
-.about-us h1{
+.about-us h1 {
     font-size: 50px;
     color: var(--gold--);
     margin-bottom: 5vh;
 }
 
-.about-us p{
+.about-us p {
     margin-top: 1vh;
     font-size: 20px;
     color: var(--teal--);
     margin-bottom: 10vh;
 }
 
-.about-us h2{
+.about-us h2 {
     margin-top: 2vh;
     font-size: 30px;
     color: var(--gold--);
 }
 
-.radhouane{
+.radhouane {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30vh;
+    justify-content: space-around;
+    gap: 15vh;
 }
 
-.radhouane ul{
-    list-style: none;
+.radhouane-card {
+    padding: 20px;
+    width: 70vh;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgb(167, 167, 167);
+    top: 0;
 }
 
-.radhouane li{
-    text-align: center;
+.radhouane li {
     color: var(--teal--);
+    text-align: left;
+    margin-left: 150px;
 }
 
-.radhouane i{
-    margin-right: 20px;
+.radhouane ul {
+    list-style-position: inside;
+}
+
+.about-us h2.about-title {
+    margin-bottom: 2vh;
+    color: var(--dark-green--);
+}
+
+.about-us i{
+    color: var(--dark-green--);
 }
 
 /*services sections*/
 
-.services{
+.services {
     margin: 15vh 40vh 20vh 40vh;
     text-align: center;
 }
 
-.services h1{
+.services h1 {
     font-size: 50px;
     color: var(--gold--);
 }
 
-.services .cards{
+.services .cards {
     display: flex;
     margin-top: 5vh;
     justify-content: center;
@@ -204,7 +239,7 @@ li.nav-hover:hover ul.drop-down{
     flex-wrap: wrap;
 }
 
-.services .card{
+.services .card {
     padding: 20px;
     width: 300px;
     margin: 10px;
@@ -215,36 +250,36 @@ li.nav-hover:hover ul.drop-down{
     top: 0;
 }
 
-.services .card:hover{
+.services .card:hover {
     transform: translateY(-25px);
     cursor: pointer;
     box-shadow: 0px 20px 30px rgb(167, 167, 167);
 }
 
-.services .card img{
+.services .card img {
     width: 300px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.services .card h2{
+.services .card h2 {
     margin-bottom: 15px;
     color: var(--dark-green--);
 }
 
-.services .card p{
+.services .card p {
     margin-bottom: 15px;
     color: var(--teal--);
 }
 
-.services .card button{
+.services .card button {
     font-family: inherit;
     font-size: 15px;
     padding: 10px 20px;
     cursor: pointer;
     color: white;
-    background-color:var(--dark-green--) ;
+    background-color: var(--dark-green--);
     border: none;
     border-radius: 10px;
     width: 100%;
@@ -252,33 +287,35 @@ li.nav-hover:hover ul.drop-down{
 
 /*contact sections*/
 
-.contact{
+.contact {
     background-color: var(--gold--);
 }
 
-.contact-container{
+.contact-container {
     margin: 0vh 20vh 0vh 20vh;
     padding: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 200px;
 }
-.contact h1{
+
+.contact h1 {
     margin-bottom: 30px;
     font-size: 70px;
     color: var(--light-blue--);
 }
 
-.contact input{
+.contact input {
     margin: 10px;
     padding: 10px;
     border: none;
-    width: 100%;    
+    width: 100%;
     font-family: inherit;
     border-radius: 10px;
 }
 
-.contact textarea{
+.contact textarea {
     padding: 10px;
     margin: 10px;
     border: none;
@@ -287,36 +324,42 @@ li.nav-hover:hover ul.drop-down{
     width: 300px;
 }
 
-.contact button{
+.contact button {
     font-family: inherit;
     font-size: 15px;
     padding: 10px 20px;
     cursor: pointer;
     color: white;
-    background-color:var(--teal--) ;
+    background-color: var(--teal--);
     border: none;
     border-radius: 10px;
     width: 100%;
     transition: 0.3s;
 }
-.contact button:hover{
+
+.contact iframe{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.contact button:hover {
     background-color: var(--dark-green--);
 }
 
-.contact h2{
+.contact h2 {
     margin-top: 100px;
     font-size: 30px;
     color: var(--light-blue--);
     margin-bottom: 30px;
 }
 
-.contact p{
+.contact p {
     color: var(--light-yellow--);
     font-size: 15px;
     margin-top: 20px;
 }
 
-.contact .phone-number{
+.contact .phone-number {
     font-size: 20px;
     font-weight: 900;
     color: var(--light-yellow--);
@@ -324,18 +367,18 @@ li.nav-hover:hover ul.drop-down{
 
 /*footer*/
 
-footer{
+footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-footer img{
+footer img {
     width: 50px;
     height: auto;
 }
 
-footer a{
+footer a {
     color: #095256;
     margin-left: 20px;
 }
