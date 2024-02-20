@@ -155,12 +155,33 @@ li.nav-hover:hover ul.drop-down{
     margin-top: 1vh;
     font-size: 20px;
     color: var(--teal--);
+    margin-bottom: 10vh;
 }
 
 .about-us h2{
     margin-top: 2vh;
     font-size: 30px;
     color: var(--gold--);
+}
+
+.radhouane{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30vh;
+}
+
+.radhouane ul{
+    list-style: none;
+}
+
+.radhouane li{
+    text-align: center;
+    color: var(--teal--);
+}
+
+.radhouane i{
+    margin-right: 20px;
 }
 
 /*services sections*/
