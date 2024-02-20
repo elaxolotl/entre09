@@ -4,9 +4,22 @@
 :root{
     --gold--: #B3971A;
     --dark-green--: #095256;
-    --teal--: #087F8C;
-    --light-yellow--: #EEE4E1;
+    --teal--: #5a7677;
+    --light-yellow--: #fff5f2;
     --light-blue--: #ECF8F8;
+}
+
+/*general*/
+
+hr{
+    margin-top: 15vh;
+}
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 *{
@@ -17,7 +30,6 @@
 body{
     font-family: "Nunito Sans", sans-serif;
     background-color: var(--light-yellow--);
-    margin-bottom: 100vh;
 }
 
 /*navbar styling*/
@@ -33,6 +45,7 @@ nav{
     position: sticky;
     top: 0;
     transition: 0.3s;
+    z-index: 999;
 }
 
 .scrolled{
@@ -64,7 +77,6 @@ ul li ul.drop-down li{
 
 ul li ul.drop-down li:hover{
     background-color: var(--light-yellow--);
-    border-radius: 10px;
 }
 
 ul li ul.drop-down{
@@ -79,21 +91,224 @@ li.nav-hover:hover ul.drop-down{
 }
 
 
-/*first section*/
+/*hero section*/
 
-.first-section{
-    margin: 25vh 20vh 0vh 20vh;
+.hero{
+    margin: 10vh 40vh 0vh 40vh;
     text-align: center;
 }
 
-.first-section h1{
-    font-size: 70px;
+.hero h1{
+    font-size: 60px;
     color: var(--gold--);
+    line-height: 100%;
 }
 
-.first-section h2{
-    margin-top: 2vh;
+.hero h2{
+    margin-top: 5vh;
     font-size: 20px;
     color: var(--dark-green--);
 }
 
+.hero button{
+    font-family: inherit;
+    margin-top: 5vh;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background-color:var(--gold--) ;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0px 10px 20px rgb(167, 167, 167);
+}
+
+.hero button i{
+    font-size: 15px;
+}
+
+.hero button:hover{
+    background-color: #dfc13b;
+}
+
+/*about us section*/
+
+.about-us{
+    margin: 15vh 40vh 0vh 40vh;
+    text-align: center;
+}
+
+.about-us h1{
+    font-size: 50px;
+    color: var(--gold--);
+    margin-bottom: 5vh;
+}
+
+.about-us p{
+    margin-top: 1vh;
+    font-size: 20px;
+    color: var(--teal--);
+}
+
+.about-us h2{
+    margin-top: 2vh;
+    font-size: 30px;
+    color: var(--gold--);
+}
+
+/*services sections*/
+
+.services{
+    margin: 15vh 40vh 20vh 40vh;
+    text-align: center;
+}
+
+.services h1{
+    font-size: 50px;
+    color: var(--gold--);
+}
+
+.services .cards{
+    display: flex;
+    margin-top: 5vh;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.services .card{
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgb(167, 167, 167);
+    transition: 0.3s;
+    top: 0;
+}
+
+.services .card:hover{
+    transform: translateY(-25px);
+    cursor: pointer;
+    box-shadow: 0px 20px 30px rgb(167, 167, 167);
+}
+
+.services .card img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.services .card h2{
+    margin-bottom: 15px;
+    color: var(--dark-green--);
+}
+
+.services .card p{
+    margin-bottom: 15px;
+    color: var(--teal--);
+}
+
+.services .card button{
+    font-family: inherit;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background-color:var(--dark-green--) ;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/*contact sections*/
+
+.contact{
+    background-color: var(--gold--);
+}
+
+.contact-container{
+    margin: 0vh 20vh 0vh 20vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.contact h1{
+    margin-bottom: 30px;
+    font-size: 70px;
+    color: var(--light-blue--);
+}
+
+.contact input{
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    width: 100%;    
+    font-family: inherit;
+    border-radius: 10px;
+}
+
+.contact textarea{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    font-family: inherit;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.contact button{
+    font-family: inherit;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background-color:var(--teal--) ;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    transition: 0.3s;
+}
+.contact button:hover{
+    background-color: var(--dark-green--);
+}
+
+.contact h2{
+    margin-top: 100px;
+    font-size: 30px;
+    color: var(--light-blue--);
+    margin-bottom: 30px;
+}
+
+.contact p{
+    color: var(--light-yellow--);
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.contact .phone-number{
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--light-yellow--);
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    width: 50px;
+    height: auto;
+}
+
+footer a{
+    color: #095256;
+    margin-left: 20px;
+}
