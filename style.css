@@ -162,7 +162,7 @@ li.nav-hover-second:hover ul.drop-down-second {
 /*about us section*/
 
 .about-us {
-    margin: 15vh 40vh 0vh 40vh;
+    margin: 15vh 40vh 20vh 40vh;
     text-align: center;
 }
 
@@ -185,38 +185,52 @@ li.nav-hover-second:hover ul.drop-down-second {
     color: var(--gold--);
 }
 
-.radhouane {
+/*about-me*/
+
+.about-me{
+    background-color: var(--dark-green--);
     display: flex;
     justify-content: space-around;
-    gap: 15vh;
+    align-items: center;
+    color: var(--light-blue--);
+    text-align: center;
+    padding: 50px 0px 70px 0px;
 }
 
-.radhouane-card {
-    padding: 20px;
-    width: 70vh;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 10px 20px rgb(167, 167, 167);
-    top: 0;
+.about-me img{
+    height: 45vh;
+    width: auto;
+    border-radius: 10px;
+    margin-top: -120px;  
 }
 
-.radhouane li {
-    color: var(--teal--);
+.about-me h1{
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.about-me-card{
+    width: 40vh;
+    height: 20vh;
+}
+
+.about-me li {
+    color: var(--light-yellow--);
     text-align: left;
-    margin-left: 150px;
+    margin-left: 8em;
 }
 
-.radhouane ul {
+.about-me ul {
+    text-align: center;
     list-style-position: inside;
 }
 
-.about-us h2.about-title {
+.about-me h2 {
     margin-bottom: 2vh;
-    color: var(--dark-green--);
 }
 
-.about-us i{
-    color: var(--dark-green--);
+.about-me i{
+    font-size: 40px;    
 }
 
 /*services sections*/
