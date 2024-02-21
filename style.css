@@ -176,7 +176,7 @@ li.nav-hover-second:hover ul.drop-down-second {
     margin-top: 1vh;
     font-size: 20px;
     color: var(--teal--);
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
 }
 
 .about-us h2 {
@@ -190,11 +190,12 @@ li.nav-hover-second:hover ul.drop-down-second {
 .about-me{
     background-color: var(--dark-green--);
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
+    gap: 5vh;
     color: var(--light-blue--);
-    text-align: center;
-    padding: 50px 0px 70px 0px;
+    padding: 5vh 40vh;
+    text-align: right;
 }
 
 .about-me img{
@@ -206,37 +207,24 @@ li.nav-hover-second:hover ul.drop-down-second {
 
 .about-me h1{
     margin-top: 20px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
-.about-me-card{
-    width: 40vh;
-    height: 20vh;
+.about-me p {
+    text-align: right;
+    font-size: 20px;
 }
 
-.about-me li {
-    color: var(--light-yellow--);
-    text-align: left;
-    margin-left: 8em;
-}
-
-.about-me ul {
-    text-align: center;
-    list-style-position: inside;
-}
-
-.about-me h2 {
-    margin-bottom: 2vh;
-}
-
-.about-me i{
-    font-size: 40px;    
+.about-me i {
+    color: var(--teal--);
+    font-size: 60px;
+    margin-top: 0;
 }
 
 /*services sections*/
 
 .services {
-    margin: 15vh 40vh 20vh 40vh;
+    margin: 15vh 40vh 15vh 40vh;
     text-align: center;
 }
 
@@ -297,6 +285,39 @@ li.nav-hover-second:hover ul.drop-down-second {
     border: none;
     border-radius: 10px;
     width: 100%;
+}
+
+/*clients section*/
+
+.clients{
+    margin: 15vh 40vh 20vh 40vh;
+    text-align: center;
+    color: var(--gold--);
+}
+
+.clients h1{
+    font-size: 50px;
+    margin-bottom: 5vh;
+}
+
+.clients-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.clients img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgb(167, 167, 167);
+    transition: 0.3s;
+}
+
+.clients img:hover{
+    transform: scale(1.1);
 }
 
 /*contact sections*/
