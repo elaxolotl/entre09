@@ -417,3 +417,42 @@ footer a {
     color: #095256;
     margin-left: 20px;
 }
+
+/*taifs section: prices*/
+
+#prices{
+    margin: 15vh 40vh 20vh 40vh;
+
+}
+
+#prices .prices-cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+#prices .price-category{
+    margin-left: 20px;
+    padding: 35px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+#prices .price-category:hover{
+    background-color: var(--teal--);
+    color: var(--light-blue--);
+}
+
+#prices .price-category:focus{
+    background-color: var(--dark-green--);
+    color: var(--light-blue--);
+}
+
+#prices .price-tag{
+    display: none;
+}
