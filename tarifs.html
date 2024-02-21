@@ -60,14 +60,15 @@
         <div id="prices">
             <div class="prices-cards">
                 <div class="prices-card">
-                    <button class="price-category" onclick="showChild()">Société & Associations Tunisienne</button>   
+                    <button class="price-category" onclick="showChild()">Société & Associations Tunisienne</button>
                     <div class="price-tag">
                         <h3>250 TND</h3>
                         <p>Jour/Homme en HT</p>
                     </div>
                 </div>
                 <div class="prices-card">
-                    <button class="price-category" onclick="showChild()">Startup & Association des Jeunes Tunisienne</button>
+                    <button class="price-category" onclick="showChild()">Startup & Association des Jeunes
+                        Tunisienne</button>
                     <div class="price-tag">
                         <h3>150 TND</h3>
                         <p>Jour/Homme</p>
@@ -90,32 +91,33 @@
             </div>
         </div>
 
+        <!--javascript here-->
+
         <script>
-            function showChild(){
+            //clicking the first button when the page loads
+            document.addEventListener("DOMContentLoaded", function () {
+                var firstButton = document.querySelector("button.price-category");
+                firstButton.click();
+            });
+
+            //showing prices when category is clicked
+            function showChild() {
+                var allButtons = document.querySelectorAll("button");
                 var button = event.target;
                 var nextElement = button.nextElementSibling;
                 var otherElements = document.querySelectorAll(".price-tag");
-                otherElements.forEach(element => {
-                    element.style.display="none";
+                allButtons.forEach(item => {
+                    item.style.background = "transparent";
+                    item.style.color = "var(--dark-green--)";
                 });
-                nextElement.style.display="block";
+                otherElements.forEach(element => {
+                    element.style.display = "none";
+                });
+                nextElement.style.display = "block";
+                button.style.background = "var(--dark-green--)";
+                button.style.color = "var(--light-blue--)";
             }
         </script>
-
-        <!--footer starts here-->
-
-        <footer>
-            <div><a href="index.html">
-                    <img src="assets/logo 09.png">
-                </a>
-            </div>
-            <div>
-                <a href="https://www.facebook.com/profile.php?id=61556254239762&sk=about" target="_blank"><i
-                        class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="mailto:rsfaxi.work@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </footer>
 
     </div>
     </divs>

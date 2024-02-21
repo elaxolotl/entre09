@@ -382,7 +382,7 @@ li.nav-hover-second:hover ul.drop-down-second {
 }
 
 .contact h2 {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 30px;
     color: var(--light-blue--);
     margin-bottom: 30px;
@@ -406,6 +406,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    bottom: 0;
 }
 
 footer img {
@@ -421,13 +422,13 @@ footer a {
 /*taifs section: prices*/
 
 #prices{
-    margin: 15vh 40vh 20vh 40vh;
+    margin: 15vh 0vh 20vh 0vh;
 
 }
 
 #prices .prices-cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #prices .price-category{
@@ -435,24 +436,28 @@ footer a {
     padding: 35px;
     cursor: pointer;
     border: none;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     font-family: inherit;
     transition: 0.3s;
     font-size: 20px;
     font-weight: 600;
     background-color: transparent;
-}
-
-#prices .price-category:hover{
-    background-color: var(--teal--);
-    color: var(--light-blue--);
-}
-
-#prices .price-category:focus{
-    background-color: var(--dark-green--);
-    color: var(--light-blue--);
+    color: var(--dark-green--);
 }
 
 #prices .price-tag{
+    border-top: solid 2px var(--dark-green--);
     display: none;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0; 
+    text-align: center;
+    padding: 15vh 0vh;
+}
+
+#prices h3{
+    color: var(--dark-green--);
+    font-size: 50px;
 }
