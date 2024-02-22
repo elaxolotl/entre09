@@ -188,12 +188,12 @@ li.nav-hover-second:hover ul.drop-down-second {
 /*about-me*/
 
 .about-me{
-    background-color: var(--dark-green--);
+    background-color: var(--gold--);
     display: flex;
     justify-content:center;
     align-items: center;
     gap: 5vh;
-    color: var(--light-blue--);
+    color: white;
     padding: 5vh 40vh;
     text-align: right;
 }
@@ -216,7 +216,7 @@ li.nav-hover-second:hover ul.drop-down-second {
 }
 
 .about-me i {
-    color: var(--teal--);
+    color: #efdb82;
     font-size: 60px;
     margin-top: 0;
 }
