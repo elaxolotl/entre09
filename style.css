@@ -419,7 +419,7 @@ footer a {
     margin-left: 20px;
 }
 
-/*taifs section: prices*/
+/*tarifs section: prices*/
 
 #prices{
     margin: 15vh 0vh 20vh 0vh;
@@ -433,6 +433,7 @@ footer a {
 
 #prices .price-category{
     margin-left: 20px;
+    margin-right: 20px;
     padding: 35px;
     cursor: pointer;
     border: none;
@@ -440,7 +441,7 @@ footer a {
     border-top-left-radius: 10px;
     font-family: inherit;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     background-color: transparent;
     color: var(--dark-green--);

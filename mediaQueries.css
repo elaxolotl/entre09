@@ -103,6 +103,13 @@
     .contact p {
         margin-top: 10px;
     }
+
+    /*tarifs section: prices*/
+
+    #prices .price-category {
+        padding: 25px;
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -203,6 +210,15 @@
         color: #efdb82;
         font-size: 20px;
         margin-top: 0;
+    }
+
+    /*tarifs section: prices*/
+
+    #prices .price-category {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+        font-size: 10px;
     }
 
 
