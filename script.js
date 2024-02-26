@@ -8,4 +8,8 @@ function stickyNavbar(){
         nav.classList.remove("scrolled");
     }    
 };
-
+//hamburger menu
+function showNav(){
+    const elements = document.querySelector("#hamburger-elements");
+    elements.classList.toggle("hidden")
+}

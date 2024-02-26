@@ -1,8 +1,17 @@
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1550px) {
 
     html,
     body {
         overflow-x: hidden;
+    }
+
+    /*navbar*/
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger-nav {
+        display: block;
     }
 
     /*hero section*/
@@ -93,8 +102,6 @@
         height: auto;
     }
 
-
-
     .contact h2 {
         font-size: 20px;
         margin-bottom: 10px;
@@ -182,36 +189,105 @@
 
     .about-me {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5vh;
-        color: white;
+        flex-direction: column;
+        gap: 0vh;
         padding: 5vh 5vh;
-        text-align: right;
+        text-align: center;
     }
 
     .about-me img {
-        height: 20vh;
-        width: auto;
-        border-radius: 10px;
-        margin-top: -120px;
+        display: none;
     }
 
     .about-me h1 {
-        margin-top: 20px;
         font-size: 20px;
     }
 
     .about-me p {
         font-size: 15px;
+        text-align: center;
     }
 
     .about-me i {
-        color: #efdb82;
         font-size: 20px;
-        margin-top: 0;
     }
 
+    /*services sections*/
+
+    .services {
+        margin: 15vh 5vh 20vh 5vh;
+    }
+
+    .services h1 {
+        font-size: 25px;
+    }
+
+    .services .card {
+        width: 150px;
+    }
+
+    .services .card img {
+        width: 150px;
+        height: 75px;
+    }
+
+    .services .card h2 {
+        margin-bottom: 10px;
+    }
+
+
+    /*clients section*/
+
+    .clients {
+        margin: 15vh 5vh 20vh 5vh;
+    }
+
+    .clients h1 {
+        font-size: 25px;
+    }
+
+    .clients-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .clients img {
+        width: 150px;
+        height: 75px;
+    }
+
+    /*contact sections*/
+
+    .contact-container {
+        margin: 15vh 0vh 20vh 0vh;
+        padding: 25px;
+        gap: 10px;
+    }
+
+    .contact h1 {
+        font-size: 25px;
+    }
+
+    .contact input {
+        width: 100px;
+    }
+
+    .contact iframe {
+        width: 300px;
+        height: auto;
+    }
+
+    .contact h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .contact p {
+        margin-top: 10px;
+    }
+    
     /*tarifs section: prices*/
 
     #prices .price-category {

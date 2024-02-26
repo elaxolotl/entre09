@@ -23,38 +23,71 @@
 
         <div class="navbar">
             <nav>
+              <div class="desktop-nav">
                 <div><a href="index.html"><img src="assets/logo 09.png" class="nav-logo" /></a></div>
                 <div class="nav-list">
-                    <ul>
-                        <li class="nav-hover">Nos métiers <i class="fa-solid fa-angle-down"></i>
-                            <ul class="drop-down">
-                                <li><a href="#" class="nav-hover-second">Formations <i
-                                            class="fa-solid fa-angle-down"></i></a>
-                                    <ul class="drop-down-second">
-                                        <li><a href="#">Comptabilité</a></li>
-                                        <li><a href="#">Finance</a></li>
-                                        <li><a href="#">Fiscalité</a></li>
-                                        <li><a href="#">Logistique</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="nav-hover-second">Assistance <i
-                                            class="fa-solid fa-angle-down"></i></a>
-                                    <ul class="drop-down-second">
-                                        <li><a href="#">Comptabilité</a></li>
-                                        <li><a href="#">Finance</a></li>
-                                        <li><a href="#">Fiscalité</a></li>
-                                        <li><a href="#">Logistique</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                  <ul>
+                    <li class="nav-hover">Nos métiers <i class="fa-solid fa-angle-down"></i>
+                      <ul class="drop-down">
+                        <li><a href="#" class="nav-hover-second">Formations <i class="fa-solid fa-angle-down"></i></a>
+                          <ul class="drop-down-second">
+                            <li><a href="#">Comptabilité</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Fiscalité</a></li>
+                            <li><a href="#">Logistique</a></li>
+                          </ul>
                         </li>
-                        <li><a href="#">Accompagnement</a></li>
-                        <li><a href="#">Tarifs</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                        <li><a href="#" class="nav-hover-second">Assistance <i class="fa-solid fa-angle-down"></i></a>
+                          <ul class="drop-down-second">
+                            <li><a href="#">Comptabilité</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Fiscalité</a></li>
+                            <li><a href="#">Logistique</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Accompagnement</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
                 </div>
+              </div>
+              <div class="hamburger-nav">
+                <div class="hamburger-initial-elements">
+                  <a href="index.html"><img src="assets/logo 09.png" class="nav-logo" /></a>
+                  <button onclick="showNav()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <div id="hamburger-elements" class="hidden">
+                  <ul>
+                    <li class="nav-hover">Nos métiers <i class="fa-solid fa-angle-down"></i>
+                      <ul class="drop-down">
+                        <li><a href="#" class="nav-hover-second">Formations <i class="fa-solid fa-angle-down"></i></a>
+                          <ul class="drop-down-second">
+                            <li><a href="#">Comptabilité</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Fiscalité</a></li>
+                            <li><a href="#">Logistique</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="nav-hover-second">Assistance <i class="fa-solid fa-angle-down"></i></a>
+                          <ul class="drop-down-second">
+                            <li><a href="#">Comptabilité</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Fiscalité</a></li>
+                            <li><a href="#">Logistique</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Accompagnement</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
             </nav>
-        </div>
+          </div>
 
         <!--prices section-->
 
@@ -122,6 +155,7 @@
 
     </div>
     </divs>
+    <script src="script.js"></script>
 </body>
 
 </html>

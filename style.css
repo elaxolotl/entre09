@@ -38,6 +38,9 @@ body {
 
 nav {
     background-color: white;
+}
+
+.desktop-nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -48,10 +51,11 @@ a {
 }
 
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     transition: 0.3s;
     z-index: 999;
+    width: 100%;
 }
 
 .scrolled {
@@ -63,7 +67,7 @@ a {
     width: 50px;
 }
 
-nav li {
+.desktop-nav li {
     display: inline-block;
     margin-left: 100px;
     cursor: pointer;
@@ -117,6 +121,36 @@ li.nav-hover-second:hover ul.drop-down-second {
     display: block;
 }
 
+/*hamburger-nav*/
+.hamburger-nav{
+    display: none;
+}
+
+.hamburger-initial-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hamburger-nav button{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--gold--);
+    padding: 10px 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+#hamburger-elements ul li{
+    font-size: 20px;
+    padding: 10px;
+    margin: 0% 30% 0% 30%;
+    list-style: none;
+
+}
 
 /*hero section*/
 
