@@ -264,6 +264,7 @@
         margin: 15vh 0vh 20vh 0vh;
         padding: 25px;
         gap: 10px;
+        flex-direction: column;
     }
 
     .contact h1 {
@@ -287,7 +288,14 @@
     .contact p {
         margin-top: 10px;
     }
-    
+
+    /*footer*/
+
+    footer img {
+        width: 30px;
+        height: auto;
+    }
+
     /*tarifs section: prices*/
 
     #prices .price-category {
