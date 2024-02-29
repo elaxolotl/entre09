@@ -100,6 +100,10 @@ li.nav-hover:hover ul.drop-down {
     display: block;
 }
 
+li.nav-hover:focus ul.drop-down {
+    display: block;
+}
+
 ul li ul.drop-down-second li {
     display: block;
     margin-left: 0;
