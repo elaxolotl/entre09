@@ -10,6 +10,8 @@ function stickyNavbar(){
 };
 //hamburger menu
 function showNav(){
+    const hamburgerNav = document.querySelector(".hamburger-nav");
     const elements = document.querySelector("#hamburger-elements");
     elements.classList.toggle("hidden")
+    hamburgerNav.style.backgroundColor='var(--light-blue--)'
 }

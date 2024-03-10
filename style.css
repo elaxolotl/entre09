@@ -30,7 +30,7 @@ html {
 
 body {
     font-family: 'Typo Grotesk', sans-serif;
-    background-color: var(--light-yellow--);
+    background: linear-gradient(rgb(205, 205, 236) 0%, var(--light-yellow--) 20%);
 }
 
 /*navbar styling*/
@@ -128,6 +128,8 @@ li.nav-hover-second:hover ul.drop-down-second {
 /*hamburger-nav*/
 .hamburger-nav{
     display: none;
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .hamburger-initial-elements{
